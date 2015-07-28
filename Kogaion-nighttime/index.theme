@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Kogaion-nighttime
+Type=X-GNOME-Metatheme
+Comment=Kogaion Linux nighttime theme
+Encoding=UTF-8
+GtkTheme=Kogaion-nighttime
+MetacityTheme=Kogaion-nighttime
+IconTheme=Numix-Circle
+CursorTheme=Default
+CursorSize=24

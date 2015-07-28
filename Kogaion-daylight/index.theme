@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Kogaion-daylight
+Type=X-GNOME-Metatheme
+Comment=Kogaion Linux daylight theme
+Encoding=UTF-8
+GtkTheme=Kogaion-daylight
+MetacityTheme=Kogaion-daylight
+IconTheme=Numix-Circle
+CursorTheme=Default
+CursorSize=24
