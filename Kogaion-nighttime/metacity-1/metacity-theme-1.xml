@@ -9,6 +9,9 @@
   <description>Kogaion Linux nighttime theme</description>
 </info>
 
+<!-- TODO -->
+<!-- Thiner borders -->
+
 <!-- FRAMES GEOMETRY-->
 
 <frame_geometry name="normal" rounded_top_left="false" rounded_top_right="false">
