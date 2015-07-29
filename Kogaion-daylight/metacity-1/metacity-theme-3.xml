@@ -8,6 +8,10 @@
 	<description>Kogaion Linux daylight theme</description>
 </info>
 
+<!-- TODO -->
+<!-- Make highlighst as per metacity1 -->
+<!-- Make it fun (gtk colors) -->
+
 <!-- meaningfull constants -->
 
 <constant name="C_border_focused" value="#6c99c0" />
