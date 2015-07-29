@@ -92,7 +92,7 @@ style "default" {
 	####################
 	bg[NORMAL]          = @theme_bg_color
 	bg[PRELIGHT]		= shade (1.02, @theme_bg_color)
-	bg[SELECTED]		= @selected_bg_color
+	bg[SELECTED]		= @window_active_color
 	bg[INSENSITIVE] 	= shade (1.20, @theme_bg_color)
 	bg[ACTIVE]         	= @theme_bg_color
 
