@@ -280,13 +280,13 @@
 	</draw_ops>
 
 	<draw_ops name="menu_focused">
-   	<image filename="menu.png" x="0" y="1" width="object_width" height="object_height"/>
+   	<image filename="menu_focused_normal.png" x="0" y="1" width="object_width" height="object_height"/>
 	</draw_ops>
 
 <!-- No prelight for menu focussed?? -->
 
 	<draw_ops name="menu_focused_pressed">
-  	 <image filename="menu_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  	 <image filename="menu_focused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="menu_unfocused">
