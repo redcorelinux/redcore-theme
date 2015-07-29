@@ -1,3 +1,6 @@
+# TODO
+# Match menu and toolbar with decorations
+
 gtk-color-scheme = "base_color:#383838\nbg_color:#2e2e2e"
 gtk-color-scheme = "text_color:#d4d4d4\nfg_color:#bababa"
 gtk-color-scheme = "selected_bg_color:#496490\nselected_fg_color:#f3f3f3"
@@ -6,7 +9,7 @@ gtk-color-scheme = "theme_bg_color:#2e2e2e\nbutton_base:#2e2e2e"
 gtk-color-scheme = "theme_bg_dark_color:#4f5e76\ntheme_fg_dark_color:#dfdfdf\ntheme_text_dark_color:#eaeaea"
 gtk-color-scheme = "sidebar_background:#313233"
 
-gtk_color_scheme = "window_active_color:#4f5e76\nwindow_inactive_color:#626262" #Windows decorations
+gtk_color_scheme = "window_active_color:#496490\nwindow_inactive_color:#626262" #Windows decorations
 gtk_color_scheme = "test1:#f30f0f\ntest2:#f1c30b" #debug colors
 
 gtk-auto-mnemonics	= 1
