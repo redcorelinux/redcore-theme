@@ -10,11 +10,10 @@
 	(will be finalized with gtk3)
 
 ### xfwm
-	WIP:
-	(refine buttons, highlights, make it fun)
+	done
 
 ### gtk2
-	WIP:
+	Wprkanle, TBD:
 	- panel to be refined
 	- checkboxes to be refined
 	- code cleaning
