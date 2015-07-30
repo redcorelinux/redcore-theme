@@ -13,7 +13,7 @@
 	done
 
 ### gtk2
-	Wprkanle, TBD:
+	Workable, TBD:
 	- panel to be refined
 	- checkboxes to be refined
 	- code cleaning
