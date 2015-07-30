@@ -3,18 +3,18 @@
 ## Status:
 
 ### metacity-1
-	**done
+	done
 
 ### metacity-3
-	**WIP
+	WIP:
 	(will be finalized with gtk3)
 
 ### xfwm
-	**WIP
+	WIP:
 	(refine buttons, highlights, make it fun)
 
 ### gtk2
-	**WIP:
+	WIP:
 	- panel to be refined
 	- checkboxes to be refined
 	- code cleaning
