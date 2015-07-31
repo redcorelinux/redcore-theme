@@ -801,9 +801,9 @@ widget_class "*<GtkRadioButton>*<GtkLabel>"		style:highest "checkradio_label"
 # For Google Chrome/Chromium integration.
 style "chrome-gtk-frame" {
     ChromeGtkFrame::frame-gradient-size		    	= 120
-    ChromeGtkFrame::frame-gradient-color			= shade (1.06, @window_active_color)
+    ChromeGtkFrame::frame-gradient-color			= @window_active_color
     ChromeGtkFrame::inactive-frame-gradient-color	= shade (0.90, @theme_bg_color)
-    ChromeGtkFrame::frame-color			        	= shade (0.64, @window_active_color)
+    ChromeGtkFrame::frame-color			        	= @window_active_color
     ChromeGtkFrame::inactive-frame-color			= shade (0.90, @theme_bg_color)
 
     ChromeGtkFrame::scrollbar-trough-color			= shade (0.99, @bg_color)
