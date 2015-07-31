@@ -95,7 +95,7 @@ style "default" {
 	bg[NORMAL]          = @theme_bg_color
 	bg[PRELIGHT]		= shade (1.02, @theme_bg_color)
 	bg[SELECTED]		= @window_active_color	#used by metacity/xfwm
-	bg[INSENSITIVE] 	= shade (1.20, @theme_bg_color)
+	bg[INSENSITIVE] 	= shade (0.9, @theme_bg_color)
 	bg[ACTIVE]         	= @theme_bg_color
 
 	fg[NORMAL]          = @fg_color
@@ -802,10 +802,10 @@ widget_class "*<GtkRadioButton>*<GtkLabel>"		style:highest "checkradio_label"
 # For Google Chrome/Chromium integration.
 style "chrome-gtk-frame" {
     ChromeGtkFrame::frame-gradient-size		    	= 120
-    ChromeGtkFrame::frame-gradient-color			= shade (1.06, @theme_bg_dark_color)
-    ChromeGtkFrame::inactive-frame-gradient-color	= shade (1.06, @theme_bg_dark_color)
-    ChromeGtkFrame::frame-color			        	= shade (0.64, @theme_bg_dark_color)
-    ChromeGtkFrame::inactive-frame-color			= shade (0.64, @theme_bg_dark_color)
+    ChromeGtkFrame::frame-gradient-color			= @window_active_color
+    ChromeGtkFrame::inactive-frame-gradient-color	= shade (0.90, @theme_bg_color)
+    ChromeGtkFrame::frame-color			        	= @window_active_color
+    ChromeGtkFrame::inactive-frame-color			= shade (0.90, @theme_bg_color)
 
     ChromeGtkFrame::scrollbar-trough-color			= shade (0.99, @bg_color)
     ChromeGtkFrame::scrollbar-slider-prelight-color	= shade (0.87, @bg_color)
