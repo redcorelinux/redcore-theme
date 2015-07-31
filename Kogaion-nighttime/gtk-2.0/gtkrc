@@ -3,10 +3,12 @@ gtk-color-scheme = "text_color:#d4d4d4\nfg_color:#bababa"
 gtk-color-scheme = "selected_bg_color:#496490\nselected_fg_color:#f3f3f3"
 gtk-color-scheme = "tooltip_bg_color:#303030\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
 gtk-color-scheme = "theme_bg_color:#2e2e2e\nbutton_base:#2e2e2e"
-gtk-color-scheme = "theme_bg_dark_color:#4f5e76\ntheme_fg_dark_color:#dfdfdf\ntheme_text_dark_color:#eaeaea"
 gtk-color-scheme = "sidebar_background:#313233"
 
-gtk_color_scheme = "window_active_color:#496490\nwindow_inactive_color:#626262" #Windows decorations
+#must match window_color and fg_color
+gtk-color-scheme = "theme_bg_dark_color:#496490\ntheme_fg_dark_color:#bababa\ntheme_text_dark_color:#eaeaea"
+
+gtk_color_scheme = "window_active_color:#496490" #Windows decorations
 gtk_color_scheme = "test1:#ff0000\ntest2:#00ff00" #debug colors
 
 gtk-auto-mnemonics	= 1
@@ -92,7 +94,7 @@ style "default" {
 
 	bg[NORMAL]          = @theme_bg_color
 	bg[PRELIGHT]		= shade (1.02, @theme_bg_color)
-	bg[SELECTED]		= @selected_bg_color
+	bg[SELECTED]		= @window_active_color		#used by metacity/xfwm
 	bg[INSENSITIVE] 	= shade (1.20, @theme_bg_color)
 	bg[ACTIVE]         	= @theme_bg_color
 
@@ -241,7 +243,7 @@ style "button" {
 	}
 }
 
-style "button_label" { fg[ACTIVE] = @test2 }
+style "button_label" { fg[ACTIVE] = @selected_fg_color }
 
 # Force text color on radiobutton-eclipse
 style "checkradio_label" { fg[ACTIVE] = @fg_color }
@@ -271,7 +273,7 @@ style "entry" {
 	GtkWidget	::focus-padding		= 1
 
 #	bg[ACTIVE]				    	= @bg_color
-	bg[NORMAL]				    	= @test1
+	bg[NORMAL]				    	= @base_color
 #	bg[PRELIGHT]					= shade (1.13, @selected_bg_color)
 #	bg[SELECTED]					= shade (1.08, @selected_bg_color)
 #	bg[INSENSITIVE]					= @bg_color
@@ -311,7 +313,7 @@ style "menubar" {
 	fg[PRELIGHT]	    = @selected_fg_color
 	fg[ACTIVE]	    	= @selected_fg_color
 	fg[SELECTED]	    = @selected_fg_color
-	bg[NORMAL]          = shade (1.00, @theme_bg_dark_color)
+	bg[NORMAL]          = shade (1.00, @window_active_color)
     
 	engine "murrine" {
 		gradient_shades     	= {1.00, 1.00, 1.00, 1.00}
@@ -367,7 +369,7 @@ style "menubar_menuitem" {
 	ythickness	= 3
 
 	fg[NORMAL] 		= shade (1.00, @theme_fg_dark_color)						# menu item normal
-    fg[INSENSITIVE] = mix(0.60, @theme_fg_dark_color, @theme_bg_dark_color)	    # menu item disabled
+    fg[INSENSITIVE] = mix(0.60, @theme_fg_dark_color, @window_active_color)	    # menu item disabled
 	fg[PRELIGHT]	= @selected_fg_color										# menu item selected
 
    	bg[PRELIGHT]    = shade (0.94, @selected_bg_color)
@@ -521,7 +523,7 @@ style "spinbutton" = "button" { # input/stepper
 }
 
 style "toolbar" = "wider" {
-	bg[NORMAL]		= shade (1.00, @theme_bg_dark_color)
+	bg[NORMAL]		= shade (1.00, @window_active_color)
     	
 	engine "murrine" {
 		separatorstyle		= 0

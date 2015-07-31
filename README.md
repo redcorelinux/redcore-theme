@@ -1,28 +1,28 @@
 # kogaion-theme
 
-## Status:
+### Actual status:
 
-### metacity-1
+#### metacity-1
 	done
 
-### metacity-3
-	WIP:
-	(will be finalized with gtk3)
-
-### xfwm
+#### xfwm
 	done
 
-### gtk2
-	Workable, TBD:
+#### gtk2
+	Ongoing, TBD:
 	- panel to be refined
 	- checkboxes to be refined
-	- code cleaning
+	- more code cleaning
+	- see also 'to review' file
 
-### gtk3
+#### gtk3
 	missing in action
 
-### gnome-shell
+#### metacity-3
+	WIP (will be done with gtk3)
+
+#### gnome-shell
 	N/A for the momment
 
-### cinnamon
+#### cinnamon
 	lost in a galaxy far-far away
