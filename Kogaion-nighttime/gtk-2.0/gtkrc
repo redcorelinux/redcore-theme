@@ -543,14 +543,13 @@ style "toolbar_button" {
 	bg[SELECTED]	= shade (0.85, @theme_bg_dark_color)
 	bg[INSENSITIVE]	= shade (0.98, @theme_bg_dark_color)
 
+	fg[INSENSITIVE]	= shade (0.7, @theme_bg_dark_color)
+
 	engine "murrine" {
 		gradient_shades    	= {1.00,0.96,0.96,0.90}
 		border_shades		= {1.10, 0.90}
 		contrast     		= 1.00
 		lightborderstyle	= 1
-		# lightborder_shade	= 1.80
-		textstyle			= 1
-        text_shade			= 0.7
 	}
 }
 
