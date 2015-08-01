@@ -6,9 +6,15 @@
 
 #### metacity-1
 	done
+	designed to automatically pick-up gtk colors
+
+#### metacity-2
+	done. added for easier customization.
+	designed to automatically pick-up gtk colors
 
 #### xfwm
 	done
+	designed to automatically pick-up gtk colors
 
 #### gtk2
 	Ongoing, TBD:
@@ -21,7 +27,7 @@
 	missing in action
 
 #### metacity-3
-	WIP (will be done with gtk3)
+	existing, not finished (will be done with gtk3)
 
 #### gnome-shell
 	N/A for the momment
