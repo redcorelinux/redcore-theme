@@ -674,6 +674,191 @@ style "checkradio"  {
 	}
 }
 
+#Add pixmap style for check/radiobuttons
+
+style "checkradio-pixmap"  {
+	engine "pixmap"
+	{
+
+	# Check Buttons
+
+	image 
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 					= NORMAL
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/checkbox-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 					= PRELIGHT
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/checkbox-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 					= ACTIVE
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/checkbox-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 					= SELECTED
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/checkbox-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 					= INSENSITIVE
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/checkbox-unchecked-insensitive.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+	    	state	 				= NORMAL
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/checkbox-checked.svg"
+            overlay_stretch	 	= FALSE
+        }
+	image 
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+	    	state 					= PRELIGHT
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/checkbox-checked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+	    	state 		        	= ACTIVE
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/checkbox-checked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image
+		{
+            function        		= CHECK
+            recolorable     		= TRUE
+	    	state 		        	= SELECTED
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/checkbox-checked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+  		{
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 		        	= INSENSITIVE
+            shadow          		= IN
+            overlay_file			= "Check-Radio/checkbox-checked-insensitive.svg"
+            overlay_stretch 		= FALSE
+	}
+
+	# Radio Buttons
+
+	image 
+		{
+            function        		= OPTION
+            state 			= NORMAL
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/option-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= OPTION
+            state 			= PRELIGHT
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/option-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= OPTION
+            state 			= ACTIVE
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/option-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image
+		{
+            function        		= OPTION
+            state 			= SELECTED
+            shadow          		= OUT
+            overlay_file    		= "Check-Radio/option-unchecked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= OPTION
+            state 			= INSENSITIVE
+            shadow         		= OUT
+            overlay_file    		= "Check-Radio/option-unchecked-insensitive.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= OPTION
+			state 			= NORMAL
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/option-checked.svg"
+            overlay_stretch 		= FALSE
+        }
+ 	image 
+		{
+            function        		= OPTION
+	 	   state			= PRELIGHT
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/option-checked.svg"
+            overlay_stretch 		= FALSE
+        }
+	image 
+		{
+            function        		= OPTION
+		    state			= ACTIVE
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/option-checked.svg"
+            overlay_stretch	 	= FALSE
+        }
+	image
+		{
+            function        		= OPTION
+	    	state			= SELECTED
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/option-checked.svg"
+            overlay_stretch	 	= FALSE
+        }
+	image 
+		{
+            function        		= OPTION
+	    	state 			= INSENSITIVE
+            shadow          		= IN
+            overlay_file    		= "Check-Radio/option-checked-insensitive.svg"
+            overlay_stretch 		= FALSE
+        }
+	}
+}
+
+
 style "separator" = "wide" {
 	engine "murrine" {
 		contrast	= 0.4
@@ -790,8 +975,8 @@ widget_class "*.<GtkCList>.<GtkButton>"			style "treeview_header"
 # The window of the tooltip is called "gtk-tooltip"
 widget "gtk-tooltip*"							style "tooltips"
 
-widget_class "*<GtkCheckButton>*"				style "checkradio"
-widget_class "*<GtkRadioButton>*"				style "checkradio"
+widget_class "*<GtkCheckButton>*"				style "checkradio-pixmap"
+widget_class "*<GtkRadioButton>*"				style "checkradio-pixmap"
 widget_class "*<GtkCheckButton>*<GtkLabel>"		style:highest "checkradio_label"
 widget_class "*<GtkRadioButton>*<GtkLabel>"		style:highest "checkradio_label"
 
