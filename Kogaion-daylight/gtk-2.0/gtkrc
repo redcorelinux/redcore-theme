@@ -646,35 +646,7 @@ style "treeview_header" {
 	}
 }
 
-style "checkradio"  {
-    xthickness	= 3
-    ythickness	= 3
-#	GtkCheckButton	::indicator-size		= 16
-#	GtkCheckButton	::indicator-spacing		= 2
-
-	base[NORMAL]	= @base_color		# radiocheck normal
-	bg[SELECTED]    = @base_color		# radiocheck color checked
-
-	text[NORMAL]	= @selected_bg_color	# indicador normal    
-	text[PRELIGHT]	= @selected_bg_color	# indicador hover
-	text[ACTIVE]	= @selected_bg_color	# indicador click
-
-    bg[ACTIVE]		= shade (0.70, @base_color)			# toggle button selected
-    bg[NORMAL]		= shade (0.91, @base_color)			# toggle button normal
-    bg[PRELIGHT]	= shade (1.00, @theme_bg_color)		# toggle button prelight
-	bg[INSENSITIVE]	= shade (0.97, @theme_bg_color)		# toggle button disabled
-
-	engine "murrine" {
-		border_shades		= {0.9, 1.0}
-		contrast            = 1.20
-		gradient_shades     = {1.1,1.0,1.0,1.1}
-		lightborderstyle	= 0
-		lightborder_shade   = 0.90
-		textstyle           = 0
-	}
-}
-
-#Add pixmap style for check/radiobuttons
+#Added pixmap style for check/radiobuttons
 
 style "checkradio-pixmap"  {
 	engine "pixmap"
@@ -734,7 +706,7 @@ style "checkradio-pixmap"  {
 	    	state	 				= NORMAL
             shadow          		= IN
             overlay_file    		= "Check-Radio/checkbox-checked.png"
-            overlay_stretch	 	= FALSE
+            overlay_stretch	 		= FALSE
         }
 	image 
 		{
@@ -778,7 +750,7 @@ style "checkradio-pixmap"  {
 	image 
 		{
             function        		= OPTION
-            state 			= NORMAL
+            state 					= NORMAL
             shadow          		= OUT
             overlay_file    		= "Check-Radio/option-unchecked.png"
             overlay_stretch 		= FALSE
@@ -786,7 +758,7 @@ style "checkradio-pixmap"  {
 	image 
 		{
             function        		= OPTION
-            state 			= PRELIGHT
+            state 					= PRELIGHT
             shadow          		= OUT
             overlay_file    		= "Check-Radio/option-unchecked.png"
             overlay_stretch 		= FALSE
@@ -794,7 +766,7 @@ style "checkradio-pixmap"  {
 	image 
 		{
             function        		= OPTION
-            state 			= ACTIVE
+            state 					= ACTIVE
             shadow          		= OUT
             overlay_file    		= "Check-Radio/option-unchecked.png"
             overlay_stretch 		= FALSE
@@ -802,7 +774,7 @@ style "checkradio-pixmap"  {
 	image
 		{
             function        		= OPTION
-            state 			= SELECTED
+            state 					= SELECTED
             shadow          		= OUT
             overlay_file    		= "Check-Radio/option-unchecked.png"
             overlay_stretch 		= FALSE
@@ -810,15 +782,15 @@ style "checkradio-pixmap"  {
 	image 
 		{
             function        		= OPTION
-            state 			= INSENSITIVE
-            shadow         		= OUT
+            state 					= INSENSITIVE
+            shadow         			= OUT
             overlay_file    		= "Check-Radio/option-unchecked-insensitive.png"
             overlay_stretch 		= FALSE
         }
 	image 
 		{
             function        		= OPTION
-			state 			= NORMAL
+			state 					= NORMAL
             shadow          		= IN
             overlay_file    		= "Check-Radio/option-checked.png"
             overlay_stretch 		= FALSE
@@ -826,7 +798,7 @@ style "checkradio-pixmap"  {
  	image 
 		{
             function        		= OPTION
-	 	   state			= PRELIGHT
+	 	   state					= PRELIGHT
             shadow          		= IN
             overlay_file    		= "Check-Radio/option-checked.png"
             overlay_stretch 		= FALSE
@@ -834,23 +806,23 @@ style "checkradio-pixmap"  {
 	image 
 		{
             function        		= OPTION
-		    state			= ACTIVE
+		    state					= ACTIVE
             shadow          		= IN
             overlay_file    		= "Check-Radio/option-checked.png"
-            overlay_stretch	 	= FALSE
+            overlay_stretch	 		= FALSE
         }
 	image
 		{
             function        		= OPTION
-	    	state			= SELECTED
+	    	state					= SELECTED
             shadow          		= IN
             overlay_file    		= "Check-Radio/option-checked.png"
-            overlay_stretch	 	= FALSE
+            overlay_stretch	 		= FALSE
         }
 	image 
 		{
             function        		= OPTION
-	    	state 			= INSENSITIVE
+	    	state 					= INSENSITIVE
             shadow          		= IN
             overlay_file    		= "Check-Radio/option-checked-insensitive.png"
             overlay_stretch 		= FALSE
