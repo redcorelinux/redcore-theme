@@ -14,7 +14,7 @@
    height="16"
    id="svg814"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="checkbox-unchecked-insensitive.svg">
   <defs
      id="defs816">
@@ -137,24 +137,24 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#999999"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="26.001224"
-     inkscape:cx="8.1934284"
+     inkscape:cx="-3.3060302"
      inkscape:cy="8.4777625"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="925"
-     inkscape:window-height="839"
-     inkscape:window-x="109"
-     inkscape:window-y="26"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid4084"
@@ -171,7 +171,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -182,13 +182,11 @@
      transform="translate(0,-1036.3622)">
     <rect
        transform="scale(1,-1)"
-       style="opacity:0.5;color:#000000;fill:none;stroke:#787878;stroke-width:1.16348588;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:0.5;color:#000000;fill:none;stroke:#2e2e2e;stroke-width:1.163;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect16897"
        width="12.836514"
        height="12.836514"
        x="1.581743"
-       y="-1050.7806"
-       rx="1.8722787"
-       ry="1.875522" />
+       y="-1050.7806" />
   </g>
 </svg>

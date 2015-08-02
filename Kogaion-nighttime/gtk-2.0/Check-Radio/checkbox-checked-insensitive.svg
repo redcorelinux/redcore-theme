@@ -15,7 +15,7 @@
    height="16"
    id="svg814"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="checkbox-checked-insensitive.svg">
   <defs
      id="defs816">
@@ -172,24 +172,24 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#9f9f9f"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="30.467558"
-     inkscape:cx="4.760485"
-     inkscape:cy="9.5336824"
+     inkscape:zoom="43.087634"
+     inkscape:cx="6.0486475"
+     inkscape:cy="10.725254"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="938"
-     inkscape:window-height="838"
-     inkscape:window-x="375"
-     inkscape:window-y="24"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      showguides="false">
     <inkscape:grid
        type="xygrid"
@@ -207,7 +207,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -217,17 +217,15 @@
      id="layer1"
      transform="translate(0,-1036.3622)">
     <rect
-       ry="1.875522"
-       rx="1.8722787"
        y="1037.9442"
        x="1.581743"
        height="12.836514"
        width="12.836514"
        id="rect6506"
-       style="opacity:0.5;color:#000000;fill:none;stroke:#787878;stroke-width:1.16299999;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.5;color:#000000;fill:none;stroke:#2e2e2e;stroke-width:1.163;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
-       style="fill:none;stroke:#787878;stroke-width:2.09799999999999986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;opacity:0.50000000000000000"
-       d="m 3.2998088,1043.1624 3.3,4 7.7000002,-9 c 1,-1 1,-1 1,-1"
+       style="opacity:0.5;fill:none;stroke:#2e2e2e;stroke-width:2.09800005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3.2587818,1043.105 3.3,4 7.7000022,-9 c 1,-1 1,-1 1,-1"
        id="path3780"
        inkscape:connector-curvature="0" />
   </g>

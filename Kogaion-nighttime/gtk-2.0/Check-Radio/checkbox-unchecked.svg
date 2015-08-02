@@ -15,7 +15,7 @@
    height="16"
    id="svg814"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="checkbox-unchecked.svg">
   <defs
      id="defs816">
@@ -296,16 +296,6 @@
        gradientTransform="translate(1.9044932,0)" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3790"
-       id="linearGradient3023"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0300707,0,0,1.0318549,0.81343925,-33.328044)"
-       x1="6.2003608"
-       y1="1042.582"
-       x2="6.2433648"
-       y2="1050.5906" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient3880"
        id="linearGradient3886"
        x1="7"
@@ -325,34 +315,34 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3836"
-       id="linearGradient3834"
-       x1="4"
-       y1="1037.3622"
-       x2="4"
-       y2="1051.3622"
+       xlink:href="#linearGradient3790"
+       id="linearGradient4193"
+       x1="0.99992234"
+       y1="1044.3622"
+       x2="15.000078"
+       y2="1044.3622"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#7e7e7e"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="34.742854"
-     inkscape:cx="3.349613"
+     inkscape:cx="-2.912122"
      inkscape:cy="8.3956151"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1190"
-     inkscape:window-height="814"
-     inkscape:window-x="195"
-     inkscape:window-y="73"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid4084"
@@ -379,38 +369,12 @@
      id="layer1"
      transform="translate(0,-1036.3622)">
     <rect
-       style="fill:#ffffff;fill-opacity:0.08627451;fill-rule:nonzero;stroke:none"
-       id="rect3046"
-       width="14"
-       height="12.54926"
-       x="1"
-       y="1039.813"
-       rx="2.5492117"
-       ry="2.5492117" />
-    <rect
-       ry="1.8992853"
-       rx="1.8960006"
        y="1037.8627"
        x="1.5004224"
        height="12.999155"
        width="12.999156"
        id="rect6506"
-       style="color:#000000;fill:url(#linearGradient3834);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient3023);stroke-width:1.00084459999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.01102995999999989px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.06666667"
-       d="m 3.0110602,1038.8622 8.1774508,0"
-       id="path3846"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.02691698px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.07843137"
-       d="m 2.5,1049.9355 0,-10.5457"
-       id="path3036"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.02691698px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.07843137"
-       d="m 13.500458,1050.3622 0,-10.5457"
-       id="path3036-8"
-       inkscape:connector-curvature="0" />
+       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient4193);stroke-width:1.001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.65843045999999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
        d="m 3.5196031,1049.2126 8.9642849,0"
