@@ -19,9 +19,10 @@
 #### gtk2
 	Ongoing, TBD:
 	- panel to be refined
-	- checkboxes to be refined - remaining menu items and treeview
+	- checkboxes to be refined - remaining treeview
 	- more code cleaning
 	- see also 'to review' file
+	- find solution for ugly inactive icons in pixmap
 
 #### gtk3
 	missing in action
