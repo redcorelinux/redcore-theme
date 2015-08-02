@@ -19,7 +19,7 @@
 #### gtk2
 	Ongoing, TBD:
 	- panel to be refined
-	- checkboxes to be refined
+	- checkboxes to be refined - remaining menu items and treeview
 	- more code cleaning
 	- see also 'to review' file
 
