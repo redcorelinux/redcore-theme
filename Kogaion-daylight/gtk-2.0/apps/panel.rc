@@ -1,7 +1,7 @@
 style "theme-panel"
 {
 	xthickness	= 2
-	ythickness	= 0
+	ythickness	= 2
 
 	bg[NORMAL]		= @window_active_color
 #	bg[ACTIVE]		= "#00ff00"

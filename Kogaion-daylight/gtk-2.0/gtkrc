@@ -115,7 +115,7 @@ style "default" {
 
 	engine "murrine" {
 		animation				= FALSE
-        arrowstyle				= 1	# arrowstyle = 1 to draw filled arrows.
+        arrowstyle				= 2	# arrowstyle = 1 to draw filled arrows.
               						# arrowstyle = 2 to draw fat filled arrows.
 		colorize_scrollbar		= TRUE
 		contrast				= 0.7
@@ -123,7 +123,7 @@ style "default" {
 		expanderstyle			= 0	# expanderstyle = 0 to draw arrows.
               						# expanderstyle = 1 to draw circles with plus and minus.
               						# expanderstyle = 2 to draw buttons with plus and minus.
-		focusstyle				= 2 # 0 to disable focus drawing. 
+		focusstyle				= 3 # 0 to disable focus drawing. 
 									# 1 to use dots. 
 									# 2 to use a small colored rectangle. 
 									# 3 to use a colored rectangle that touches the borders.
@@ -180,6 +180,9 @@ style "default" {
 									# 1 = glassy
 									# 2 = gradient
 		trough_shades			= {0.85, 1.0}
+
+#added for testing
+		#border_colors = { "#ff0000", "#00ff00" }
 	}
 }
 
