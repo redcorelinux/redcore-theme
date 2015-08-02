@@ -5,9 +5,6 @@ gtk-color-scheme = "tooltip_bg_color:#d2e4f8\ntooltip_fg_color:#2e3436\nlink_col
 gtk-color-scheme = "theme_bg_color:#f4f4f4\nbutton_base:#f4f4f4"
 gtk-color-scheme = "sidebar_background:#ffffff"
 
-#must match window_color and fg_color
-gtk-color-scheme = "theme_bg_dark_color:#a3b5d9\ntheme_fg_dark_color:#2e3436\ntheme_text_dark_color:#f30f0f"
-
 gtk_color_scheme = "window_active_color:#a3b5d9" #Windows decorations
 gtk_color_scheme = "test1:#ff0000\ntest2:#00ff00" #debug colors
 
@@ -368,8 +365,8 @@ style "menubar_menuitem" {
 	xthickness	= 2
 	ythickness	= 3
 
-	fg[NORMAL] 		= shade (1.00, @theme_fg_dark_color)						# menu item normal
-    fg[INSENSITIVE] = mix(0.60, @theme_fg_dark_color, @window_active_color)	    # menu item disabled
+	fg[NORMAL] 		= shade (1.00, @fg_color)						# menu item normal
+    fg[INSENSITIVE] = mix(0.60, @fg_color, @window_active_color)	    # menu item disabled
 	fg[PRELIGHT]	= @selected_fg_color										# menu item selected
 
     bg[PRELIGHT]    = shade (0.94, @selected_bg_color)
@@ -538,12 +535,12 @@ style "toolbar_button" {
     xthickness	= 3
     ythickness	= 3	
 
-    bg[PRELIGHT]	= shade (0.95, @theme_bg_dark_color)
-    bg[ACTIVE]		= shade (0.80, @theme_bg_dark_color)
-	bg[SELECTED]	= shade (0.85, @theme_bg_dark_color)
-	bg[INSENSITIVE]	= shade (0.98, @theme_bg_dark_color)
+    bg[PRELIGHT]	= shade (0.95, @window_active_color)
+    bg[ACTIVE]		= shade (0.80, @window_active_color)
+	bg[SELECTED]	= shade (0.85, @window_active_color)
+	bg[INSENSITIVE]	= shade (0.98, @window_active_color)
 
-	fg[INSENSITIVE]	= shade (0.7, @theme_bg_dark_color)
+	fg[INSENSITIVE]	= shade (0.7, @window_active_color)
 
 	engine "murrine" {
 		gradient_shades		= {1.00,0.96,0.96,0.90}
@@ -1033,14 +1030,14 @@ widget "*swt*toolbar*"			style "default"
 # Xfce panel theming
 # ---------------------------------
 #style "xfce-panel" {
-#    fg[NORMAL]          = @theme_fg_dark_color
+#    fg[NORMAL]          = @fg_color
 #    fg[PRELIGHT]        = @selected_fg_color
 #    fg[ACTIVE]          = @selected_fg_color
 #    fg[SELECTED]        = @selected_fg_color
 
-#    bg[NORMAL]          = shade (1.00, @theme_bg_dark_color)
-#    bg[PRELIGHT]        = shade (0.80, @theme_bg_dark_color)
-#    bg[ACTIVE]          = shade (0.50, @theme_bg_dark_color)
+#    bg[NORMAL]          = shade (1.00, @window_active_color)
+#    bg[PRELIGHT]        = shade (0.80, @window_active_color)
+#    bg[ACTIVE]          = shade (0.50, @window_active_color)
 #    bg[SELECTED]        = shade (1.20, @selected_bg_color)
 #    engine "murrine" {
 #        gradient_shades         = {0.80, 0.85, 0.95, 1.00}
