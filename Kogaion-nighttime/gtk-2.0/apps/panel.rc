@@ -1,50 +1,52 @@
-style "theme-panel" = "murrine-dark"
+style "theme-panel"
 {
-	xthickness	= 0
-	ythickness	= 0
+	xthickness	= 2
+	ythickness	= 2
+
+	bg[NORMAL]		= @window_active_color
+#	bg[ACTIVE]		= "#00ff00"
+#	bg[PRELIGHT]	= "#0000ff"
+#	bg[SELECTED]	= "#ffff00"
 	
-	bg[NORMAL]	= shade (0.7, @bg_color_dark)
-	bg[ACTIVE]	= shade (0.5, @bg_color_dark)
-	bg[PRELIGHT]	= shade (0.35, @bg_color_dark)
-	bg[SELECTED]	= shade (0.5, @bg_color_dark)
+	fg[NORMAL]		= @fg_color
+	fg[PRELIGHT]	= @fg_color
+#	fg[ACTIVE]		= "#00ff00"
+#	fg[SELECTED]	= "#ff0000"
 	
-	fg[NORMAL]	= shade (0.9, @base_color)
-	fg[PRELIGHT]	= @base_color
-	fg[ACTIVE]	= shade (0.9, @base_color)
-	fg[SELECTED]	= shade (0.9, @base_color)
-	
-	text[NORMAL]   = shade (0.9, @base_color)
-	text[PRELIGHT] = @base_color
-	text[ACTIVE]   = shade (0.9, @base_color)
-	text[SELECTED]   = shade (0.9, @base_color)
+	text[NORMAL]   	= @fg_color
+	text[PRELIGHT] 	= @text_color
+#	text[ACTIVE]   	= "#0000ff"
+#	text[SELECTED]  = "#ffff00"
 
 	engine "murrine" {
-		#border_shades	= { 1.3, 0.9 }
-		contrast	= 0.0
-		roundness	= 0
-		glowstyle	= 0
-		glow_shade	= 1.4
-		glazestyle	= 2
+#		border_shades	= { 1.3, 0.9 }
+#		contrast	= 0.5
+#		roundness	= 0
+#		glowstyle	= 0
+#		glow_shade	= 1.4
+#		glazestyle	= 2
+		reliefstyle		= 0
+		handlestyle 	= 0
 		#trough_border_shades	= { 3.0, 2.5 } # improve visibility in panel-plugins using the progressbar (xfce4-timer-plugin)
 	}
 }
 
 style "theme-panel-text"
 {
-	fg[NORMAL]	= @base_color
-	fg[PRELIGHT]	= "#ffffff"
-	fg[ACTIVE]	= @base_color
+	fg[NORMAL]		= @fg_color
+	fg[PRELIGHT]	= @fg_color
+	fg[ACTIVE]		= @base_color
 	
-	text[NORMAL]   = @base_color
-	text[PRELIGHT] = "#ffffff"
+	text[NORMAL]   = @fg_color
+	text[PRELIGHT] = @fg_color
 	text[ACTIVE]   = @base_color
 }
 
-style "panel-entry" = "murrine-dark"
+style "panel-entry"
 {
-	fg[NORMAL]	= @text_color
+	fg[NORMAL]		= @text_color
 	fg[PRELIGHT]	= @text_color
-	fg[ACTIVE]	= @text_color
+	fg[ACTIVE]		= @text_color
 	fg[SELECTED]	= @text_color
 	fg[INSENSITIVE]	= @text_color
 
@@ -64,7 +66,7 @@ style "theme-main-menu-text" = "theme-panel-text"
 
 style "workspace-switcher" = "theme-panel"
 {
-	bg[SELECTED] = shade (0.8, @selected_bg_color)
+	bg[SELECTED] = shade (1.4, @selected_bg_color)
 }
 
 widget "*PanelWidget*"              style "theme-panel"
@@ -90,12 +92,12 @@ widget_class "*Notif*Brasero*"      style "theme-panel"
 # XFCE panel theming.
 widget "*Xfce*Panel*"               style "theme-panel"
 class "*Xfce*Panel*"                style "theme-panel"
-widget "*WnckPager*"	    	    style "workspace-switcher"
+widget "*WnckPager*"	    	    	style "workspace-switcher"
 
 # Fix gtk-entries in the panel
-class "GtkEntry"		    style "murrine-combo"
-class "*SexyIconEntry*"		    style:highest "murrine-combo"	# fixes dict-plugin
-widget "*xfce4-verve-plugin*GtkEntry"	style:highest "murrine-combo"	# fixes verve-plugin
+#class "GtkEntry"		    style "test"
+#class "*SexyIconEntry*"		    style:highest "test"	# fixes dict-plugin
+#widget "*xfce4-verve-plugin*GtkEntry"	style:highest "test"	# fixes verve-plugin
 
 # Make sure panel text color doesn't change
 widget_class "*Panel*MenuBar*"      style "theme-main-menu-text"
@@ -104,14 +106,14 @@ widget "*.clock-applet-button.*"    style "theme-panel-text"
 widget "*PanelApplet*"              style "theme-panel-text"
 
 # dark menus
-widget_class "*<GtkMenu>*"              	style "murrine-dark"
-widget_class "*<GtkMenuItem>*"          	style "murrine-wide-dark"
-widget_class "*<GtkMenuItem>.*.<GtkCalendar>"	style "murrine-dark"
-widget_class "*<GtkMenuItem>.*.<GtkEntry>"	style "panel-entry"
-widget_class "*<GtkMenuItem>.*.<GtkScale>" 	style "murrine-scale-dark"
-widget_class "*<GtkMenuBar>*"           	style "murrine-menubar"
-widget "*.gtk-combobox-popup-menu.*"   		style "murrine-wide-dark"
+#widget_class "*<GtkMenu>*"              	style "test"
+#widget_class "*<GtkMenuItem>*"          	style "test"
+#widget_class "*<GtkMenuItem>.*.<GtkCalendar>"	style "test"
+#widget_class "*<GtkMenuItem>.*.<GtkEntry>"	style "panel-entry"
+#widget_class "*<GtkMenuItem>.*.<GtkScale>" 	style "test"
+#widget_class "*<GtkMenuBar>*"           	style "test"
+#widget "*.gtk-combobox-popup-menu.*"   		style "test"
 
 # dark bg and black text for gdm's panel
-widget_class "*GdmGreeterPanel*" style "panel-entry"
-widget "*GdmClockWidget*" style "murrine-dark"
+#widget_class "*GdmGreeterPanel*" style "panel-entry"
+#widget "*GdmClockWidget*" style "test"

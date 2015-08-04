@@ -344,8 +344,8 @@ style "menubar_menuitem" {
     fg[INSENSITIVE] = mix(0.60, @fg_color, @window_active_color)	    # menu item disabled
 	fg[PRELIGHT]	= @selected_fg_color										# menu item selected
 
-    bg[PRELIGHT]    = shade (0.94, @selected_bg_color)
-    bg[SELECTED]    = shade (1.05, @selected_bg_color)
+	bg[PRELIGHT]    = shade (0.94, @selected_bg_color)
+	bg[SELECTED]    = shade (1.05, @selected_bg_color)
 
 	engine "murrine" {
         gradient_shades		= {1.03, 1.00, 1.00, 1.00}
@@ -778,7 +778,6 @@ style "checkradio-pixmap"  {
 	}
 }
 
-
 style "separator" = "wide" {
 	engine "murrine" {
 		contrast	= 0.4
@@ -805,7 +804,6 @@ widget "MozillaGtkWidget*GtkMenuBar" 			style "FireFox-MenuBar"
 #widget	"MozillaGtkWidget*Toolbar*"		style	"theme-toolbar"
 #widget	"MozillaGtkWidget*Statusbar*"	style	"ff-statusbar"
 
-
 widget	"MozillaGtkWidget*"	style	"ff-default"
 
 ####  Firefox  ###
@@ -820,7 +818,6 @@ style "firefox-base-entry" {
 	engine "murrine" {
 
 	}
-
 }
 
 # widget	"MozillaGtkWidget*GtkFixed*GtkEntry*"	style:highest	"firefox-base-entry"
@@ -858,26 +855,26 @@ widget_class "*<OsThumb>" 		style "overlay_scrollbar"
 
 # General matching follows. The order is choosen so that the right styles override
 # each other. EG. progressbar needs to be more important than the menu match.
-widget_class "*<GtkButton>"			    style "button"
-widget_class "*<GtkButton>*<GtkLabel>"  style "button_label"
+widget_class "*<GtkButton>"			    		style "button"
+widget_class "*<GtkButton>*<GtkLabel>"  			style "button_label"
 
-widget_class "*<GtkNotebook>"			style "notebook"
+widget_class "*<GtkNotebook>"					style "notebook"
 widget_class "*<GtkNotebook>*<GtkDrawingArea>"  style "notebook"
 widget_class "*<GtkNotebook>*<GtkLayout>"       style "notebook"
 widget_class "*<GtkNotebook>*<GtkLabel>"        style "notebook"
 
-widget_class "*<GtkMenuBar>*"			style "menubar"
-widget_class "*<GtkMenu>*"			    style "menu"
-widget_class "*<GtkMenuItem>*"			style "menu_item_white"
+widget_class "*<GtkMenuBar>*"					style "menubar"
+widget_class "*<GtkMenu>*"			    		style "menu"
+widget_class "*<GtkMenuItem>*"					style "menu_item_white"
 
-widget_class "*<GtkMenuBar>.<GtkMenuItem>*"	style "menubar_menuitem"
+widget_class "*<GtkMenuBar>.<GtkMenuItem>*"		style "menubar_menuitem"
 
 widget_class "*<GtkToolbar>"                    style "toolbar"
 widget_class "*<GtkHandleBox>"                  style "toolbar"
 widget_class "*<GtkToolbar>.*.<GtkButton>*"     style "toolbar_button"
 class "GtkSeparatorToolItem"		            style "toolbar_separator"
-widget_class "*<GtkSeparatorToolItem>*" 		style "separator_tool_item"
-widget_class "*<GtkSeparatorMenuItem>*" 		style "separator_menu_item"
+widget_class "*<GtkSeparatorToolItem>*" 			style "separator_tool_item"
+widget_class "*<GtkSeparatorMenuItem>*" 			style "separator_menu_item"
 
 widget_class "*.<GtkFrame>.<GtkLabel>"			style "frame_title"
 widget_class "*.<GtkTreeView>*"					style "treeview"
@@ -985,7 +982,7 @@ widget "*swt*toolbar*"			style "default"
 #    fg[PRELIGHT]        = @selected_fg_color
 #    fg[ACTIVE]          = @selected_fg_color
 #    fg[SELECTED]        = @selected_fg_color
-
+#
 #    bg[NORMAL]          = shade (1.00, @window_active_color)
 #    bg[PRELIGHT]        = shade (0.80, @window_active_color)
 #    bg[ACTIVE]          = shade (0.50, @window_active_color)
