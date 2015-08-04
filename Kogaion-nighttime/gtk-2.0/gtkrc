@@ -3,7 +3,6 @@ gtk-color-scheme = "text_color:#d4d4d4\nfg_color:#bababa"
 gtk-color-scheme = "selected_bg_color:#496490\nselected_fg_color:#f3f3f3"
 gtk-color-scheme = "tooltip_bg_color:#303030\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
 gtk-color-scheme = "theme_bg_color:#2e2e2e\nbutton_base:#2e2e2e"
-gtk-color-scheme = "sidebar_background:#496490"
 
 gtk_color_scheme = "window_active_color:#496490" #Windows decorations
 gtk_color_scheme = "test1:#ff0000\ntest2:#00ff00" #debug colors
