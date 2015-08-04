@@ -18,7 +18,6 @@
 
 #### gtk2
 	Ongoing, TBD:
-	- panel to be refined
 	- checkboxes for treeview (if possible)
 	- more code cleaning
 	- see also 'to review' file
