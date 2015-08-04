@@ -1031,5 +1031,4 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 # widget "xfwm4-tabwin*" style "murrine-dark"
 include "apps/thunar.rc"		# thunar especific
 include "apps/terminal.rc"
-include "apps/gmusicbrowser.rc"
 
