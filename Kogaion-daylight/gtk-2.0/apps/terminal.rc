@@ -1,39 +1,23 @@
 style "terminal"
 {
 	
-	bg[NORMAL]	= @bg_color
-	bg[ACTIVE]	= @bg_color
+	bg[NORMAL]		= @bg_color
+	bg[ACTIVE]		= @bg_color
 	bg[PRELIGHT]	= @bg_color
 	bg[SELECTED]	= @bg_color
 	base[NORMAL]	= @bg_color
 }
 
-style "terminal-scrollbar" = "scrollbar"
-{
-
-}
-
 style "terminal-notebook"  
 {
-	bg[NORMAL]		= shade( 0.85, @sidebar_background)
-	bg[ACTIVE]		= shade( 0.70, @sidebar_background)
-	fg[NORMAL]      = shade (0.80, @text_color) # text selected tab
-	fg[ACTIVE] 		= shade( 0.28, @sidebar_background)	# text unselected tab
+	bg[NORMAL]		= darker(@window_active_color) # bg selected tab
+	bg[ACTIVE]		= @window_active_color
+	fg[NORMAL]		= @bg_color	# text selected tab
+	fg[ACTIVE]		= @fg_color
 
 	engine "murrine"
 	{
-		gradient_shades		= {1.00,0.96,0.92,0.88}
-		highlight_shade     = 1.03
-		roundness       	= 0
 		contrast        	= 0.0	
-		
-		## things that don't work:
-		#glow_shade	= 0.8
-		#glowstyle           = 2
-		#focusstyle	    = 3
-		#glazestyle          = 3
-		#border_shades	= { 0.45, 2.5 }
-		#prelight_shade	= 1.5
 	}
 }
 
@@ -54,6 +38,5 @@ class "*TerminalWindow"										style "terminal"
 widget_class "TerminalWindow*GtkNotebook"					style "terminal-notebook"
 widget_class "TerminalWindow*<GtkNotebook>*<GtkLabel>" 	style "terminal-notebook"
 widget_class "TerminalWindow*<GtkNotebook>*<GtkButton>" 	style "notebook-button"
-# widget "*TerminalWindow.*.GtkVScrollbar"					style "terminal-scrollbar"
 
 

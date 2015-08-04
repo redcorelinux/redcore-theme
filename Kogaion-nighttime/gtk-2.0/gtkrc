@@ -3,7 +3,7 @@ gtk-color-scheme = "text_color:#d4d4d4\nfg_color:#bababa"
 gtk-color-scheme = "selected_bg_color:#496490\nselected_fg_color:#f3f3f3"
 gtk-color-scheme = "tooltip_bg_color:#303030\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
 gtk-color-scheme = "theme_bg_color:#2e2e2e\nbutton_base:#2e2e2e"
-gtk-color-scheme = "sidebar_background:#313233"
+gtk-color-scheme = "sidebar_background:#496490"
 
 gtk_color_scheme = "window_active_color:#496490" #Windows decorations
 gtk_color_scheme = "test1:#ff0000\ntest2:#00ff00" #debug colors
@@ -123,11 +123,11 @@ style "default" {
 		expanderstyle			= 0	# expanderstyle = 0 to draw arrows.
               						# expanderstyle = 1 to draw circles with plus and minus.
               						# expanderstyle = 2 to draw buttons with plus and minus.
-		focusstyle				= 3 # 0 to disable focus drawing. 
+		focusstyle				= 0 # 0 to disable focus drawing. 
 									# 1 to use dots. 
 									# 2 to use a small colored rectangle. 
 									# 3 to use a colored rectangle that touches the borders.
-		focus_color 			= shade (0.9, @selected_bg_color)
+		focus_color 			= shade (0.7, @selected_bg_color)
 		glazestyle				= 0 # 0 = flat highlight, 
 									# 1 = curved highlight
 									# 2 = concave style, 
@@ -182,7 +182,7 @@ style "default" {
 		trough_shades			= {0.85, 1.0}
 
 #added for testing
-		border_colors = { shade (0.5, @fg_color) , shade (0.5, @fg_color) }
+		border_colors = { shade (0.45, @fg_color) , shade (0.45, @fg_color) }
 	}
 }
 
@@ -248,43 +248,16 @@ style "button_label" { fg[ACTIVE] = @selected_fg_color }
 # Force text color on radiobutton-eclipse
 style "checkradio_label" { fg[ACTIVE] = @fg_color }
 
-style "entry-1" { # text
-	xthickness		= 2
-	ythickness		= 2
-
-	bg[SELECTED]	= mix (0.4, @selected_bg_color, @base_color)
-	fg[SELECTED]	= @text_color
-
-	engine "murrine" {
-		#border_shades          = {1.9, 0.8}
-		contrast                = 1.00
-		roundness				= 0
-		focusstyle				= 2
-		lightborderstyle		= 1		
-		lightborder_shade       = 1.90
-	}
-}
-
 style "entry" {
-    xthickness                      = 2
-    ythickness                      = 2
+    xthickness		= 3
+    ythickness		= 3
 
-	GtkWidget	::focus-line-width	= 1
-	GtkWidget	::focus-padding		= 1
+#	bg[NORMAL]		= @window_active_color
 
-#	bg[ACTIVE]				    	= @bg_color
-	bg[NORMAL]				    	= @base_color
-#	bg[PRELIGHT]					= shade (1.13, @selected_bg_color)
-#	bg[SELECTED]					= shade (1.08, @selected_bg_color)
-#	bg[INSENSITIVE]					= @bg_color
-	
 	engine "murrine" {
-		contrast					= 0.7
-		border_shades 				= {1.0, 1.0}
-		lightborderstyle			= 1
-#		lightborder_shade			= 1.65
-		reliefstyle             	= 0
-		roundness					= 0	
+		contrast		= 0.65
+		focusstyle		= 3
+		focus_color 	= @selected_bg_color
 	}
 }
 
@@ -396,31 +369,8 @@ style "notebook" {
 	fg[ACTIVE]		= shade (0.95, @fg_color)				# text unselected tab
 	fg[INSENSITIVE] = shade (0.90, @fg_color)
 
-	engine "murrine" {
-#		gradient_shades	= {1.0,1.0,1.0,1.0}	
-		contrast 		= 0.8
-#		highlight_shade	= 0.95
-		roundness 		= 1
-		focusstyle		= 0
-        reliefstyle		= 0 # 0 = flat, 1 = inset, 2 = shadow
-							# 3 = shadow with gradient, 4 = stronger shadow with gradient 
-	}
-}
-
-style "notebook-background" {
-    xthickness		= 2 
-    ythickness		= 2
-   
-	bg[ACTIVE]		= shade (0.95, @window_active_color)	# unselected tab
-
-	fg[NORMAL]		= @text_color
-	fg[ACTIVE]		= @text_color
-	fg[INSENSITIVE] = @fg_color
-
-	engine "murrine" {
-		gradient_shades		= {0.90,0.98,0.92,0.90}
-		contrast 			= 1.0
-		roundness 			= 1 
+	engine "murrine" {	
+		contrast 		= 0.7 
 	}
 }
 
@@ -642,7 +592,6 @@ style "treeview_header" {
         text_shade			= 0.7
         glow_shade			= 1.0
 		prelight_shade		= 1.9
-		focusstyle 			= 0
 	}
 }
 
