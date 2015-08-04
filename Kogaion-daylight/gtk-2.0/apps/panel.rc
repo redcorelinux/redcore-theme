@@ -3,39 +3,21 @@ style "theme-panel"
 	xthickness	= 2
 	ythickness	= 2
 
-	bg[NORMAL]		= @window_active_color
-#	bg[ACTIVE]		= "#00ff00"
-#	bg[PRELIGHT]	= "#0000ff"
-#	bg[SELECTED]	= "#ffff00"
+	bg_pixmap[NORMAL] = "/Panel/panel-bg.png"
+	bg[NORMAL]		= @window_active_color # mate-panel need it
 	
-	fg[NORMAL]		= @fg_color
+	fg[NORMAL]		= @bg_color
 	fg[PRELIGHT]	= @fg_color
-#	fg[ACTIVE]		= "#00ff00"
-#	fg[SELECTED]	= "#ff0000"
 	
 	text[NORMAL]   	= @fg_color
 	text[PRELIGHT] 	= @text_color
-#	text[ACTIVE]   	= "#0000ff"
-#	text[SELECTED]  = "#ffff00"
-
-	engine "murrine" {
-#		border_shades	= { 1.3, 0.9 }
-#		contrast	= 0.5
-#		roundness	= 0
-#		glowstyle	= 0
-#		glow_shade	= 1.4
-#		glazestyle	= 2
-		reliefstyle		= 0
-		handlestyle 	= 0
-		#trough_border_shades	= { 3.0, 2.5 } # improve visibility in panel-plugins using the progressbar (xfce4-timer-plugin)
-	}
 }
 
 style "theme-panel-text"
 {
-	fg[NORMAL]		= @fg_color
+	fg[NORMAL]		= @bg_color
 	fg[PRELIGHT]	= @fg_color
-	fg[ACTIVE]		= @base_color
+	fg[ACTIVE]		= @bg_color
 	
 	text[NORMAL]   = @fg_color
 	text[PRELIGHT] = @fg_color
