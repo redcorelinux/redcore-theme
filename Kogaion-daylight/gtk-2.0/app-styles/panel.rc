@@ -46,23 +46,25 @@ style "pixmap-panel"
 			border		= { 4, 4, 1, 1 }
 			stretch		= TRUE
 		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= INSENSITIVE
+#		image {
+#			function	= BOX
+#			recolorable	= TRUE
+#			state		= INSENSITIVE
+#		}
 
-		}
+
 	}
 }
 
-style "other-panel" = "default" #this is doubled, discard when finished
+style "other-panel" 	# this style is somehow doubled, discard when no longer needed
 {
-	xthickness = 2
+	xthickness = 0
 	ythickness = 0
 
 	fg[NORMAL]		= @bg_color
 	fg[PRELIGHT]	= shade (1.45, @selected_bg_color)
 	fg[ACTIVE]		= @bg_color
+	fg[SELECTED]	= @selected_bg_color
 
 	bg[NORMAL]       	=  shade (0.90, @window_active_color)
 #	bg[ACTIVE]			=  @selected_bg_color
@@ -102,12 +104,21 @@ style "other-panel" = "default" #this is doubled, discard when finished
 			border		= { 4, 4, 1, 1 }
 			stretch		= TRUE
 		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= INSENSITIVE
-
-		}
+    	image {
+      		function			= HANDLE
+      		recolorable			= TRUE
+     		overlay_file		= "Others/null.png"
+     		#overlay_file		= "Handles/handle-v.png"
+      		overlay_stretch		= FALSE
+      		orientation			= VERTICAL
+    	}
+    	image {
+      		function			= HANDLE
+     		overlay_file		= "Others/null.png"
+     		#overlay_file		= "Handles/handle-h.png"
+      		overlay_stretch 	= FALSE
+      		orientation			= HORIZONTAL
+    	}
 	}
 }
 
@@ -132,14 +143,25 @@ style "theme-main-menu-text" = "other-panel"
 
 style "theme-panel-handle" 
 {
-	engine "pixmap" {    
-		image {
-			function = HANDLE
-		}    
-		image {
-			function = HANDLE
-		}
-	}
+	engine "pixmap"
+  	{
+    image
+    {
+      function            = HANDLE
+      file                      = "Panel/panel-handle.png"
+      border                    = { 0, 0, 0, 0 }
+      stretch                   = TRUE
+      orientation            = VERTICAL
+    }
+    image
+    {
+      function            = HANDLE
+      file                      = "Panel/panel-handle.png"
+      border                    = { 0, 0, 0, 0 }
+      stretch                   = TRUE
+      orientation            = HORIZONTAL
+    }
+  	}
 }
 
 # XFCE panel theming.
@@ -181,29 +203,4 @@ widget "*.clock-applet-button.*"		style "other-panel"
 widget "*PanelApplet*"				style "other-panel" # check here, why doubled, looks ok for bottom
 
 # Hide ugly handle
-class "PanelAppletFrame" 			style:highest "theme-panel-handle"
-
-# The following removes the arrows from the panel
-
-style "panel-arrow-remove" {
-engine "pixmap" {
-	image {
-		function	= ARROW
-		recolorable	= TRUE
-		overlay_file	= "Panel/arrow-blank.png"
-		overlay_border	= {2,2,2,2}
-		overlay_stretch	= FALSE
-		arrow_direction	= UP
-		}
-	image {
-		function	= ARROW
-		recolorable	= TRUE
-		overlay_file	= "Panel/arrow-blank.png"
-		overlay_border	= {2,2,2,2}
-		overlay_stretch	= FALSE
-		arrow_direction	= DOWN
-		}
-	}
-}
-
-widget_class "*PanelToplevel*" style "panel-arrow-remove"
+# class "PanelAppletFrame" 			style "theme-panel-handle"
