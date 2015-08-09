@@ -55,7 +55,7 @@ style "pixmap-panel"
 	}
 }
 
-style "panel-buttons" = "default"
+style "other-panel" = "default" #this is doubled, discard when finished
 {
 	xthickness = 2
 	ythickness = 0
@@ -163,37 +163,37 @@ class "*Xfce*Panel*"					style "pixmap-panel"
 
 # Other (MATE) panel
 
-widget "*PanelWidget*"				style "panel-buttons"
-# widget "*PanelApplet*"				style "panel-buttons"
-widget "*fast-user-switch*"			style "panel-buttons"
-widget "*CPUFreq*Applet*"			style "panel-buttons"
-widget "*indicator-applet*"			style "panel-buttons"
-class "PanelApp*"					style "panel-buttons"
-class "PanelToplevel*"				style "panel-buttons"
-widget_class "*PanelToplevel*"		style "panel-buttons"
+widget "*PanelWidget*"				style "other-panel"
+# widget "*PanelApplet*"				style "other-panel"
+widget "*fast-user-switch*"			style "other-panel"
+widget "*CPUFreq*Applet*"			style "other-panel"
+widget "*indicator-applet*"			style "other-panel"
+class "PanelApp*"					style "other-panel"
+class "PanelToplevel*"				style "other-panel"
+widget_class "*PanelToplevel*"		style "other-panel"
 
-# widget_class "*notif*"			style "panel-buttons"
-# widget_class "*Notif*"			style "panel-buttons"
-# widget_class "*Tray*"			style "panel-buttons" 
-# widget_class "*tray*"			style "panel-buttons"
-# widget_class "*computertemp*"		style "panel-buttons"
-# widget_class "*Applet*Tomboy*"		style "panel-buttons"
-# widget_class "*Applet*Netstatus*"	style "panel-buttons"
+# widget_class "*notif*"			style "other-panel"
+# widget_class "*Notif*"			style "other-panel"
+# widget_class "*Tray*"			style "other-panel" 
+# widget_class "*tray*"			style "other-panel"
+# widget_class "*computertemp*"		style "other-panel"
+# widget_class "*Applet*Tomboy*"		style "other-panel"
+# widget_class "*Applet*Netstatus*"	style "other-panel"
 
 # Fixes for tooltip text in some apps.
 # widget_class "*Notif*Beagle*"	style "theme-panel-light"
 # widget_class "*Notif*Brasero*"	style "theme-panel-light"
 
 # lxpanel and fbpanel
-# widget "*.tclock.*"		style "panel-buttons"
-# widget "*.taskbar.*"		style "panel-buttons"
-# widget_class "*GtkBgbox*"	style "panel-buttons"
+# widget "*.tclock.*"		style "other-panel"
+# widget "*.taskbar.*"		style "other-panel"
+# widget_class "*GtkBgbox*"	style "other-panel"
 
 # Make sure panel text color doesn't change
 widget_class "*Panel*MenuBar*"		style "theme-main-menu-text"
 widget_class "*Panel*<GtkMenuBar>*"	style "theme-main-menu-text"
-widget "*.clock-applet-button.*"		style "panel-buttons"
-widget "*PanelApplet*"				style "panel-buttons"
+widget "*.clock-applet-button.*"		style "other-panel"
+widget "*PanelApplet*"				style "other-panel"
 
 # Hide ugly handle
 class "PanelAppletFrame" 			style:highest "theme-panel-handle"
