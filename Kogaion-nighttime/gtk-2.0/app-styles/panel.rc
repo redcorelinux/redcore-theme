@@ -8,7 +8,7 @@ style "pixmap-panel"
 	fg[ACTIVE]		= lighter (@fg_color)
 
 #	bg_pixmap[NORMAL] = "/Panel/panel-bg-new.svg" # Disable for normal panel backgrounds.
-	bg[NORMAL]			= @selected_bg_color
+	bg[NORMAL]       	= shade (1.0, @window_active_color)
 #	bg[ACTIVE]			= @selected_bg_color
 #	bg[PRELIGHT]      	= shade(1.75, @selected_bg_color)
 #	bg[SELECTED]      	= @selected_bg_color
@@ -158,18 +158,18 @@ style "theme-panel-handle"
 }
 
 # XFCE panel theming.
-widget "*Xfce*Panel*"	style "pixmap-panel"
-class "*Xfce*Panel*"	style "pixmap-panel"
+widget "*Xfce*Panel*"				style "pixmap-panel"
+class "*Xfce*Panel*"					style "pixmap-panel"
 
 # Other (MATE) panel
 
-widget "*PanelWidget*"			style "panel-buttons"
-# widget "*PanelApplet*"			style "panel-buttons"
-widget "*fast-user-switch*"		style "panel-buttons"
-widget "*CPUFreq*Applet*"		style "panel-buttons"
-widget "*indicator-applet*"		style "panel-buttons"
-class "PanelApp*"			style "panel-buttons"
-class "PanelToplevel*"			style "panel-buttons"
+widget "*PanelWidget*"				style "panel-buttons"
+# widget "*PanelApplet*"				style "panel-buttons"
+widget "*fast-user-switch*"			style "panel-buttons"
+widget "*CPUFreq*Applet*"			style "panel-buttons"
+widget "*indicator-applet*"			style "panel-buttons"
+class "PanelApp*"					style "panel-buttons"
+class "PanelToplevel*"				style "panel-buttons"
 widget_class "*PanelToplevel*"		style "panel-buttons"
 
 # widget_class "*notif*"			style "panel-buttons"
@@ -192,11 +192,11 @@ widget_class "*PanelToplevel*"		style "panel-buttons"
 # Make sure panel text color doesn't change
 widget_class "*Panel*MenuBar*"		style "theme-main-menu-text"
 widget_class "*Panel*<GtkMenuBar>*"	style "theme-main-menu-text"
-widget "*.clock-applet-button.*"	style "panel-buttons"
-widget "*PanelApplet*"			style "panel-buttons"
+widget "*.clock-applet-button.*"		style "panel-buttons"
+widget "*PanelApplet*"				style "panel-buttons"
 
 # Hide ugly handle
-class "PanelAppletFrame" style:highest "theme-panel-handle"
+class "PanelAppletFrame" 			style:highest "theme-panel-handle"
 
 # The following removes the arrows from the panel
 
