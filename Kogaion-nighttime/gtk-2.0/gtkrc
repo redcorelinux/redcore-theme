@@ -1026,6 +1026,6 @@ style "xfdesktop-icon-view" {
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 
 # widget "xfwm4-tabwin*" style "murrine-dark"
-include "apps/thunar.rc"		# thunar especific
-include "apps/terminal.rc"
-include "apps/panel.rc"
+include "app-styles/file-manager.rc"
+include "app-styles/terminal.rc"
+include "app-styles/panel.rc"

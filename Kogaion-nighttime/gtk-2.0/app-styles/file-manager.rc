@@ -1,4 +1,17 @@
-## Some additional thunar-specific theming
+style "sidepane" 
+{
+	base[NORMAL]		= mix (0.5, @window_active_color, @bg_color)	# backgroung
+	bg[NORMAL]			= shade (0.91, @base_color)
+#	bg[PRELIGHT]		= @base_color
+	
+	engine "murrine"
+	{ 
+		contrast				= 0.80
+	}
+}
+
+# Thunar
+
 style "thunar-path-entry-increased-style"
 {
   ThunarPathEntry::icon-size = 16
@@ -11,19 +24,13 @@ style "thunar-location-buttons"
 }
 class "ThunarLocationButtons" style "thunar-location-buttons"
 
-style "sidepane" 
-{
-	base[NORMAL]		= mix (0.5, @bg_color, @window_active_color)	# backgroung
-	bg[NORMAL]			= shade (0.91, @base_color)
-	bg[PRELIGHT]		= @fg_color
-	
-	engine "murrine"
-	{ 
-		contrast				= 0.80
-	}
-}
-
 widget_class "*ThunarShortcutsView*" 	style "sidepane"
 widget_class "*ThunarTreeView*" 	style "sidepane"
 widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView*"	style "sidepane"
 
+# Caja
+
+widget_class "*CajaSidePane*" style "sidepane"
+# widget_class "*CajaPathBar.*ToggleButton*" style:highest "test"
+# widget "*CajaNavigationWindow*GtkHPaned*" style "test"
+# widget_class "*CajaNotebook" style "test"

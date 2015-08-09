@@ -1,0 +1,182 @@
+style "xfce-panel"
+{
+	xthickness = 2 # The spacing (padding) inside and between applets. Add a lower value for a more compact look.
+	ythickness = 2
+
+	bg_pixmap[NORMAL] = "/Panel/panel-bg-new.svg" # Disable for normal panel backgrounds.
+	bg[NORMAL]		= shade (0.70, @window_active_color)
+
+	fg[NORMAL]		= @bg_color
+	fg[PRELIGHT]	= lighter (@selected_bg_color)
+	fg[ACTIVE]		= @bg_color
+
+	text[NORMAL]   	= @fg_color
+	text[PRELIGHT] 	= @text_color
+#	text[ACTIVE]	= @test1
+	
+	engine "pixmap" {
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= NORMAL
+			file		= "Panel/panel-button-inactive.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= PRELIGHT
+			file		= "Panel/panel-button-hover.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= ACTIVE
+			file		= "Panel/panel-button-active.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= SELECTED
+			file		= "Panel/panel-button-active.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= INSENSITIVE
+
+		}
+	}
+}
+
+style "other-panel"
+{
+	bg_pixmap[NORMAL] = "/Panel/panel-bg-new.svg" # Disable for normal panel backgrounds.
+	bg[NORMAL]		= shade (0.70, @window_active_color)
+
+	fg[NORMAL]		= @bg_color
+	fg[PRELIGHT]	= shade (0.9, @bg_color)
+	fg[ACTIVE]		= @bg_color
+
+	text[NORMAL]   	= @fg_color
+	text[PRELIGHT] 	= @text_color
+	text[ACTIVE]	= @fg_color
+
+	engine "murrine" {
+	}
+}
+
+style "theme-panel-light"
+{
+	xthickness = 1
+	ythickness = 0
+
+	fg[NORMAL] = @fg_color
+
+	engine "murrine" {
+		textstyle = 0
+		roundness = 0
+	}
+}
+
+style "theme-panel-text"
+{
+	fg[NORMAL]		= @bg_color
+	fg[PRELIGHT]	= shade (0.9, @bg_color)
+	fg[ACTIVE]		= @bg_color
+	text[NORMAL]	= "#f5f5f5"
+	text[PRELIGHT]	= "#ffffff"
+	text[ACTIVE]	= "#f5f5f5"
+
+	bg[NORMAL]	= @test2
+
+	engine "murrine" { }
+}
+
+style "theme-main-menu-text" = "theme-panel-text"
+{
+	fg[PRELIGHT]	= "#ffffff"
+	text[PRELIGHT]	= "#ffffff"
+}
+
+style "theme-panel-handle" 
+{
+	engine "pixmap" {    
+		image {
+			function = HANDLE
+		}    
+		image {
+			function = HANDLE
+		}
+	}
+}
+
+widget "*PanelWidget*"			style "other-panel"
+widget "*PanelApplet*"			style "other-panel"
+widget "*fast-user-switch*"		style "other-panel"
+widget "*CPUFreq*Applet*"		style "other-panel"
+widget "*indicator-applet*"		style "other-panel"
+class "PanelApp*"			style "other-panel"
+class "PanelToplevel*"			style "other-panel"
+widget_class "*PanelToplevel*"		style "other-panel"
+widget_class "*notif*"			style "other-panel"
+widget_class "*Notif*"			style "other-panel"
+widget_class "*Tray*"			style "other-panel" 
+widget_class "*tray*"			style "other-panel"
+widget_class "*computertemp*"		style "other-panel"
+widget_class "*Applet*Tomboy*"		style "other-panel"
+widget_class "*Applet*Netstatus*"	style "other-panel"
+
+# Fixes for tooltip text in some apps.
+widget_class "*Notif*Beagle*"	style "theme-panel-light"
+widget_class "*Notif*Brasero*"	style "theme-panel-light"
+
+# XFCE panel theming.
+widget "*Xfce*Panel*"	style "xfce-panel"
+class "*Xfce*Panel*"	style "xfce-panel"
+
+# lxpanel and fbpanel
+widget "*.tclock.*"		style "other-panel"
+widget "*.taskbar.*"		style "other-panel"
+widget_class "*GtkBgbox*"	style "other-panel"
+
+# Make sure panel text color doesn't change
+widget_class "*Panel*MenuBar*"		style "theme-main-menu-text"
+widget_class "*Panel*<GtkMenuBar>*"	style "theme-main-menu-text"
+widget "*.clock-applet-button.*"	style "theme-panel-text"
+widget "*PanelApplet*"			style "theme-panel-text"
+
+# Hide ugly handle
+class "PanelAppletFrame" style:highest "theme-panel-handle"
+
+# The following removes the arrows from the panel
+
+style "panel-arrow-remove" {
+engine "pixmap" {
+	image {
+		function	= ARROW
+		recolorable	= TRUE
+		overlay_file	= "Panel/arrow-blank.png"
+		overlay_border	= {2,2,2,2}
+		overlay_stretch	= FALSE
+		arrow_direction	= UP
+		}
+	image {
+		function	= ARROW
+		recolorable	= TRUE
+		overlay_file	= "Panel/arrow-blank.png"
+		overlay_border	= {2,2,2,2}
+		overlay_stretch	= FALSE
+		arrow_direction	= DOWN
+		}
+	}
+}
+
+widget_class "*PanelToplevel*" style "panel-arrow-remove"

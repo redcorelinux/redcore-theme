@@ -11,6 +11,48 @@ style "theme-panel"
 	
 	text[NORMAL]   	= @fg_color
 	text[PRELIGHT] 	= @text_color
+
+	engine "pixmap" {
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= NORMAL
+			file		= "Panel/panel-button-inactive.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= PRELIGHT
+			file		= "Panel/panel-button-hover.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= ACTIVE
+			file		= "Panel/panel-button-active.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= SELECTED
+			file		= "Panel/panel-button-active.png"
+			border		= { 4, 4, 1, 1 }
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			recolorable	= TRUE
+			state		= INSENSITIVE
+		}
+	}
+}
+
 }
 
 style "theme-panel-text"
@@ -51,6 +93,18 @@ style "workspace-switcher" = "theme-panel"
 	bg[SELECTED] = shade (1.4, @selected_bg_color)
 }
 
+style "theme-panel-handle" 
+{
+	engine "pixmap" {    
+		image {
+			function = HANDLE
+		}    
+		image {
+			function = HANDLE
+		}
+	}
+}
+
 widget "*PanelWidget*"              style "theme-panel"
 widget "*PanelApplet*"              style "theme-panel"
 widget "*fast-user-switch*"         style "theme-panel"
@@ -86,6 +140,9 @@ widget_class "*Panel*MenuBar*"      style "theme-main-menu-text"
 widget_class "*Panel*<GtkMenuBar>*" style "theme-main-menu-text"
 widget "*.clock-applet-button.*"    style "theme-panel-text"
 widget "*PanelApplet*"              style "theme-panel-text"
+
+# Hide ugly handle
+class "PanelAppletFrame" style:highest "theme-panel-handle"
 
 # dark menus
 #widget_class "*<GtkMenu>*"              	style "test"
