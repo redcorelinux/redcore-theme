@@ -2,17 +2,6 @@
 style "handle" { }
 class "GtkPaned"	style "handle"
 
-#L307
-style "menubar" {
-
-#L555
-# toolbar separator
-
-#L567
-# This style is there to modify the separator menu items. The goals are:
-
 L#625
-style "treeview_header" {
+style "treeview_header" { MUST FIX
 
-L#678
-style "separator" = "wide" {
