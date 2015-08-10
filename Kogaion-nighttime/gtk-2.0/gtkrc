@@ -572,26 +572,23 @@ style "treeview" {
 	}
 }
 
-style "treeview_header" {
-	ythickness	= 0
-    GtkWidget	::focus-padding	= 1
+style "treeview_header"
+{
+	ythickness = 1
 
-	bg[NORMAL]			= shade (1.00, @base_color)
-	bg[PRELIGHT]		= shade (1.20, @base_color)
-	bg[INSENSITIVE]		= shade (0.92, @base_color)
-	bg[ACTIVE]			= shade( 1.15, @selected_bg_color)
+	fg[NORMAL] 		= shade(0.55, @bg_color)
+	fg[PRELIGHT] 	= shade(0.80, @text_color)
 
-	engine "murrine" {
-		border_shades		= {1.0, 1.4}		
-        gradient_shades		= {1.00,1.00,1.00,1.00}
-		contrast			= 1.20
-        lightborderstyle	= 0
-		roundness			= 0
-		textstyle			= 1
-        text_shade			= 0.7
-        glow_shade			= 1.0
-		prelight_shade		= 1.9
-	}
+	engine "pixmap"
+	{
+	image 
+      	{
+        function	= BOX
+		file        = "Others/tree_header.png"
+		border      = { 1, 1, 1, 1 }
+		stretch		= TRUE
+		}
+    }
 }
 
 #Added pixmap style for check/radiobuttons

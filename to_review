@@ -2,6 +2,3 @@
 style "handle" { }
 class "GtkPaned"	style "handle"
 
-L#625
-style "treeview_header" { MUST FIX
-
