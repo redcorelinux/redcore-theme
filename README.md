@@ -17,10 +17,8 @@
 	designed to automatically pick-up gtk colors
 
 #### gtk2
-	Ongoing, TBD:
-	- checkboxes for treeview (if possible)
-	- more code cleaning
-	- see also 'to review' file
+	Ready for packaging, TBD:
+	- may be needed more code cleaning
 
 #### gtk3
 	missing in action

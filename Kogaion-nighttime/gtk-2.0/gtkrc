@@ -275,7 +275,23 @@ style "frame_title" {
 	fg[NORMAL]	= shade(0.80, @fg_color)
 }
 
-style "handle" { }
+style "handle" {
+	engine "pixmap" {
+		image {
+            function = HANDLE
+            overlay_file = "Others/pane-separator-grip.svg"
+            overlay_stretch = FALSE
+            orientation = HORIZONTAL
+        }
+        image {
+            function = HANDLE
+            overlay_file = "Others/pane-separator-grip-vertical.svg"
+            overlay_stretch = FALSE
+            orientation = VERTICAL
+        }
+	}
+}
+
 class "GtkPaned"	style "handle"
 
 style "menubar" {
