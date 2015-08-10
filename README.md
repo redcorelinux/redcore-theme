@@ -2,7 +2,7 @@
 	best to be viewed togheter with Numix-Circle icon theme
 	https://github.com/numixproject/numix-icon-theme-circle
 
-### Actual status:
+### Actual status: Ready for packaging
 
 #### metacity-1
 	done
@@ -17,8 +17,7 @@
 	designed to automatically pick-up gtk colors
 
 #### gtk2
-	Ready for packaging, TBD:
-	- may be needed more code cleaning
+	done (may be needed more code cleaning, hints added ..)
 
 #### gtk3
 	missing in action
