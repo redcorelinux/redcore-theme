@@ -969,19 +969,19 @@ style "performance-fix" {
 widget "*OOoFixed*"			style "performance-fix" # Openoffice/Libreoffice
 
 # For gvim scrollbars.
-style "vim-scrollbar" = "scrollbar" {
-	GtkScrollbar	::slider_width		= 16
-	GtkScrollbar	::stepper_size		= 16
+#style "vim-scrollbar" = "scrollbar" {
+#	GtkScrollbar	::slider_width		= 16
+#	GtkScrollbar	::stepper_size		= 16
 
-	engine "pixmap" {
-		image {
-			function	= BOX
-			orientation	= VERTICAL
-			file		= "assets/scroll-background.png"
-		}
-	}
-}
-widget "vim-main-window.*Scrollbar*"	style "vim-scrollbar"
+#	engine "pixmap" {
+#		image {
+#			function	= BOX
+#			orientation	= VERTICAL
+#			file		= "assets/scroll-background.png"
+#		}
+#	}
+#}
+#widget "vim-main-window.*Scrollbar*"	style "vim-scrollbar"
 
 # For Eclipse (swt) toolbars.
 widget "*swt*toolbar*"			style "default"

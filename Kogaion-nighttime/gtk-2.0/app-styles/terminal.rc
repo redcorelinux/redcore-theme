@@ -24,8 +24,8 @@ style "terminal-notebook"
 style "notebook-button" {
     xthickness		= 0
     ythickness		= 0
-	bg[ACTIVE]		= shade (0.68, @sidebar_background)    
-    bg[PRELIGHT]    = shade (0.75, @sidebar_background)
+	bg[ACTIVE]	= shade (0.68, @window_active_color)    
+	bg[PRELIGHT]    = shade (0.75, @window_active_color)
 	engine "murrine"
 	{
 		gradient_shades		= {1.00,1.00,1.00,1.00}

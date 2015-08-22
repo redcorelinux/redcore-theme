@@ -143,25 +143,14 @@ style "theme-main-menu-text" = "other-panel"
 
 style "theme-panel-handle" 
 {
-	engine "pixmap"
-  	{
-    image
-    {
-      function            = HANDLE
-      file                      = "Panel/panel-handle.png"
-      border                    = { 0, 0, 0, 0 }
-      stretch                   = TRUE
-      orientation            = VERTICAL
-    }
-    image
-    {
-      function            = HANDLE
-      file                      = "Panel/panel-handle.png"
-      border                    = { 0, 0, 0, 0 }
-      stretch                   = TRUE
-      orientation            = HORIZONTAL
-    }
-  	}
+	engine "pixmap" {    
+		image {
+			function = HANDLE
+		}    
+		image {
+			function = HANDLE
+		}
+	}
 }
 
 # XFCE panel theming.
