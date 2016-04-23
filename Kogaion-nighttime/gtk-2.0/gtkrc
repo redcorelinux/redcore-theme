@@ -190,6 +190,7 @@ style "murrine-button"  = "murrine-wider" {
 	bg[INSENSITIVE] = shade (0.85, @bg_color)
 
   	engine "murrine" {
+		lightborder_shade = 2.5
 	}
 }
 
