@@ -197,7 +197,7 @@ GtkAssistant .sidebar {
 
     padding: 3px;
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 1.08);
@@ -468,7 +468,7 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 2px;
+    border-radius: 0;
     background-color: @theme_base_color;
     background-image: none;
     color: @theme_text_color;
@@ -493,7 +493,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 .entry.progressbar {
     border-width: 0;
-    border-radius: 2px;
+    border-radius: 0;
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
