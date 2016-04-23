@@ -20,7 +20,7 @@
 	done (may be needed more code cleaning, hints added ..)
 
 #### gtk3
-	missing in action
+	WIP
 
 #### metacity-3
 	existing, not finished (will be done with gtk3)
