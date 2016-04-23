@@ -2,8 +2,8 @@
 static char * top_right_active_xpm[] = {
 "2 26 3 1",
 " 	c None",
-".	c #6C99C0 s active_shadow_1",
-"+	c #4F5E76 s active_color_1",
+".	c #6C99C0 s active_color_1",
+"+	c #4F5E76 s active_color_2",
 "..",
 "+.",
 "+.",
