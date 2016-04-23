@@ -132,7 +132,7 @@ style "murrine-default" {
 		glow_shade = 1.0 # amount of glow
 		gradient_shades = { 1.0, 1.0, 1.0, 1.0 } # gradient to draw on widgets
 		highlight_shade = 1.0 # amount of highlight
-		lightborder_shade = 2.5 # amount of inset light border
+		lightborder_shade = 1.0 # amount of inset light border
 		lightborderstyle = 1 # 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised
 		listviewstyle = 0 # 0 = none, 1 = dotted, 2 = line
