@@ -2198,7 +2198,7 @@ GtkColorButton.button {
 
 .primary-toolbar .button:hover,
 .toolbar .button:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: shade(@selected_bg_color, 1.0);
     background-color: shade(@toolbar_bg_color, 1.10);
     background-image: none;
 }
@@ -2284,7 +2284,7 @@ GtkColorButton.button {
 
 .inline-toolbar.toolbar .button:hover {
     border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
+    background-color: shade(@selected_bg_color, 1.0);
     background-image: none;
 }
 
@@ -2295,7 +2295,7 @@ GtkColorButton.button {
 }
 
 .inline-toolbar.toolbar .button:active:hover {
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: shade(@selected_bg_color, 1.0);
 }
 
 .inline-toolbar.toolbar .button:focus,
