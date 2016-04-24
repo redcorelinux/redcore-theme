@@ -222,10 +222,13 @@ GtkAssistant .sidebar {
 }
 
 .button:focus,
-.button:hover:focus,
 .button:active:focus,
 .button:active:hover:focus {
     border-color: shade(@theme_bg_color, 0.7);
+}
+
+.button:hover:focus {
+    border-color: shade(@selected_bg_color, 1.0);
 }
 
 .button:insensitive {
