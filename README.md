@@ -20,10 +20,10 @@
 	done (may be needed more code cleaning, hints added ..)
 
 #### gtk3
-	WIP
+	done for now, fixes may be needed
 
 #### metacity-3
-	existing, not finished (will be done with gtk3)
+	WIP
 
 #### gnome-shell
 	N/A for the momment

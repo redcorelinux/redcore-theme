@@ -1,4 +1,4 @@
-# Numix GTK Theme
+# Kogaion nighttime theme, based on Numix Dark
 
 gtk-color-scheme = "bg_color:#2d2d2d\nfg_color:#dedede\nbase_color:#2d2d2d\ntext_color:#dedede\nselected_bg_color:#1956a6\nselected_fg_color:#dedede\ntooltip_bg_color:#2d2d2d\ntooltip_fg_color:#dedede\ntitlebar_bg_color:#2d2d2d\ntitlebar_fg_color:#dedede\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dedede\ntoolbar_bg_color:#2d2d2d\ntoolbar_fg_color:#dedede\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dedede\npanel_bg_color:#2d2d2d\npanel_fg_color:#dedede\nlink_color:#157DEC"
 
@@ -471,7 +471,7 @@ class "PanelToplevel*" style "murrine-panel"
 widget_class "*PanelToplevel*" style "murrine-panel"
 widget_class "*notif*" style "murrine-panel"
 widget_class "*Notif*" style "murrine-panel"
-widget_class "*Tray*" style "murrine-panel" 
+widget_class "*Tray*" style "murrine-panel"
 widget_class "*tray*" style "murrine-panel"
 widget_class "*computertemp*" style "murrine-panel"
 widget_class "*Applet*Tomboy*" style "murrine-panel"
