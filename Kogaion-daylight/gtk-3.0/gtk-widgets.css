@@ -476,7 +476,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 .entry:active,
 .entry:focus {
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: shade(@selected_bg_color, 1.0);
 }
 
 .entry:selected,
