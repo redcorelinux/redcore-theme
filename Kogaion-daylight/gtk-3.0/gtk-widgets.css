@@ -206,8 +206,8 @@ GtkAssistant .sidebar {
 }
 
 .button:hover {
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
+    border-color: shade(@selected_bg_color, 1.0);
+    background-color: shade(@selected_bg_color, 1.75);
     background-image: none;
 }
 
