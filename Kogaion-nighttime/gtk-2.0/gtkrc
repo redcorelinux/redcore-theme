@@ -458,7 +458,7 @@ style "murrine-panel" = "murrine-thin" {
 	engine "murrine" {
 		roundness = 0
 		contrast = 0.0
-		border_shades = { 2.5, 2.5 }
+		border_shades = { 2.15, 2.15 }
 	}
 }
 
