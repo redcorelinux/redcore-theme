@@ -237,7 +237,7 @@ style "murrine-progressbar" = "murrine-thin" {
 	fg[PRELIGHT] = @selected_fg_color
 
 	engine "murrine" {
-		roundness = 2
+		roundness = 0
 		border_shades = { 1.2, 1.2 }
 		trough_border_shades = { 0.8, 0.8 }
 	}
@@ -270,7 +270,7 @@ style "murrine-tooltips" {
 
 	engine "murrine" {
 		textstyle = 0
-		roundness = 2
+		roundness = 0
 		rgba = FALSE
 	}
 }
@@ -591,7 +591,7 @@ widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkV
 
 style "chromium-toolbar-button" {
 	engine "murrine" {
-		roundness = 2
+		roundness = 0
 		textstyle = 0
 	}
 }
