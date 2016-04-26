@@ -12,8 +12,8 @@
 <!-- TODO -->
 <!-- Nothing to see here! -->
 
-<constant name="C_border_focused" value="gtk:bg[SELECTED]" />
-<constant name="C_hilight_focused" value="gtk:light[SELECTED]" />
+<constant name="C_border_focused" value="gtk:bg[NORMAL]" />
+<constant name="C_hilight_focused" value="gtk:dark[SELECTED]" />
 <constant name="C_border_unfocused" value="gtk:bg[INSENSITIVE]" />
 <constant name="C_hilight_unfocused" value="gtk:light[INSENSITIVE]" />
 
