@@ -53,13 +53,13 @@
 <!-- ACTUALLY DRAWING FRAMES -->
 
 <draw_ops name="title_background">   
-   <rectangle color="gtk:bg[SELECTED]" x="0" y="0" width="width" height="height" filled="true"/>
-   <rectangle color="gtk:light[SELECTED]" x="0" y="0" width="width-1" height="height"/>
+   <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true"/>
+   <rectangle color="gtk:dark[SELECTED]" x="0" y="0" width="width-1" height="height"/>
 </draw_ops>
 
 <draw_ops name="title_background_maximized">
-    <rectangle color="gtk:bg[SELECTED]" x="0" y="0" width="width" height="height" filled="true"/>  
-    <line color="gtk:light[SELECTED]" x1="0" y1="0" x2="width" y2="0"/>   
+    <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true"/>  
+    <line color="gtk:dark[SELECTED]" x1="0" y1="0" x2="width" y2="0"/>   
 </draw_ops>
 
 <draw_ops name="title_unfocused_background">
@@ -77,8 +77,8 @@
 </draw_ops>
 
 <draw_ops name="focus_outline">
-    <rectangle x="0" y="0" width="width" height="height" color="gtk:bg[SELECTED]" filled="true"/>
-    <rectangle x="0" y="0" width="width-1" height="height-1" color="gtk:light[SELECTED]" filled="false"/>
+    <rectangle x="0" y="0" width="width" height="height" color="gtk:bg[NORMAL]" filled="true"/>
+    <rectangle x="0" y="0" width="width-1" height="height-1" color="gtk:dark[SELECTED]" filled="false"/>
 </draw_ops>
 
 <draw_ops name="unfocus_outline">
@@ -145,12 +145,12 @@
 	</draw_ops>
 
 	<draw_ops name="minimize_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="minimize_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="minimize_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="minimize_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
@@ -173,12 +173,12 @@
 	</draw_ops>
 
 	<draw_ops name="maximize_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="maximize_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="maximize_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="maximize_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
@@ -201,12 +201,12 @@
 	</draw_ops>
 
 	<draw_ops name="unmaximize_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="unmaximize_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="unmaximize_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="unmaximize_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
@@ -229,12 +229,12 @@
 	</draw_ops>
 
 	<draw_ops name="close_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="close_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="close_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="gtk:light[SELECTED]" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="gtk:bg[SELECTED]" filled="true"/>
 		<image filename="close_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
