@@ -14,6 +14,7 @@
 
 <constant name="C_border_focused" value="gtk:bg[NORMAL]" />
 <constant name="C_hilight_focused" value="gtk:dark[SELECTED]" />
+<constant name="C_selected_focused" value="gtk:bg[SELECTED]" />
 <constant name="C_border_unfocused" value="gtk:bg[INSENSITIVE]" />
 <constant name="C_hilight_unfocused" value="gtk:light[INSENSITIVE]" />
 
@@ -150,12 +151,12 @@
 	</draw_ops>
 
 	<draw_ops name="minimize_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="minimize_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="minimize_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="minimize_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
@@ -178,12 +179,12 @@
 	</draw_ops>
 
 	<draw_ops name="maximize_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="maximize_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="maximize_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="maximize_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
@@ -206,12 +207,12 @@
 	</draw_ops>
 
 	<draw_ops name="unmaximize_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="unmaximize_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="unmaximize_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="unmaximize_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
@@ -234,12 +235,12 @@
 	</draw_ops>
 
 	<draw_ops name="close_focused_prelight">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="close_focused_prelight.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="close_focused_pressed">
-		<rectangle x="1" y="1" width="25" height="25" color="C_hilight_focused" filled="true"/>
+		<rectangle x="1" y="1" width="25" height="25" color="C_selected_focused" filled="true"/>
 		<image filename="close_focused_pressed.png" x="4" y="4" width="object_width" height="object_height"/>
 	</draw_ops>
 
