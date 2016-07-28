@@ -2,8 +2,11 @@
 	best to be viewed togheter with Numix-Circle icon theme
 	https://github.com/numixproject/numix-icon-theme-circle
 
-### Actual status: bumping to v2.2 for alfa
+### Actual status: bumping to v2.3
     in beta may jump to 3.0
+
+#### openbox
+	added 7/28/2016 for LXQt edition
 
 #### metacity-1
 	updated 4/27/2016

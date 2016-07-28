@@ -1,0 +1,150 @@
+# Name: Kogaion Openbox day theme
+# Author: bionel <ionel.busuioc@gmail.com>
+# License: GPL-3.0+
+
+
+# Menu
+menu.border.color: #6e6e6e
+
+menu.title.bg: flat solid
+menu.title.bg.color: #dedede
+menu.title.text.color: #555555
+menu.title.text.justify: center
+
+menu.items.bg: flat solid
+menu.items.bg.color: #dedede
+menu.items.text.color: #555555
+menu.items.disabled.text.color: #888888
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #157DEC
+menu.items.active.text.color: #f9f9f9
+
+menu.separator.color: #6e6e6e
+menu.separator.width: 1
+menu.separator.padding.width: 2
+menu.separator.padding.height: 4
+
+
+# Active window
+window.active.border.color: #157DEC
+
+window.active.title.bg: flat solid
+window.active.title.bg.color: #dedede
+window.active.title.separator.color: #dedede
+window.active.text.justify: center
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #2e3436
+
+window.active.handle.bg: flat solid
+window.active.handle.bg.color: #dedede
+
+window.active.grip.bg: flat solid
+window.active.grip.bg.color: #dedede
+
+window.active.button.unpressed.bg: flat solid
+window.active.button.unpressed.bg.color: #dedede
+window.active.button.unpressed.image.color: #4d4d4d
+
+window.active.button.pressed.bg: flat solid
+window.active.button.pressed.bg.color: #dedede
+window.active.button.pressed.image.color: #157DEC
+
+window.active.button.disabled.bg: flat solid
+window.active.button.disabled.bg.color: #dedede
+window.active.button.disabled.image.color: #888888
+
+window.active.button.hover.bg: flat solid
+window.active.button.hover.bg.color: #dedede
+window.active.button.hover.image.color: #d76161
+
+window.active.button.toggled.unpressed.image.color: #4d4d4d
+
+window.active.button.toggled.hover.image.color: #d76161
+
+
+# Inactive window
+window.inactive.border.color: #6e6e6e
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #dedede
+window.inactive.title.separator.color: #dedede
+window.inactive.text.justify: center
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #7d8182
+
+window.inactive.handle.bg: flat solid
+window.inactive.handle.bg.color: #dedede
+
+window.inactive.grip.bg: flat solid
+window.inactive.grip.bg.color: #dedede
+
+window.inactive.button.unpressed.bg: flat solid
+window.inactive.button.unpressed.bg.color: #dedede
+window.inactive.button.unpressed.image.color: #888888
+
+window.inactive.button.pressed.bg: flat solid
+window.inactive.button.pressed.bg.color: #dedede
+window.inactive.button.pressed.image.color: #157DEC
+
+window.inactive.button.disabled.bg: flat solid
+window.inactive.button.disabled.bg.color: #dedede
+window.inactive.button.disabled.image.color: #888888
+
+window.inactive.button.hover.bg: flat solid
+window.inactive.button.hover.bg.color: #dedede
+window.inactive.button.hover.image.color: #d76161
+
+window.inactive.button.toggled.unpressed.image.color: #888888
+
+window.inactive.button.toggled.hover.image.color: #d76161
+
+
+# OSD
+osd.border.width: 1
+osd.border.color: #157DEC
+
+osd.bg: flat solid
+osd.bg.color: #dedede
+osd.label.bg: flat solid
+osd.label.bg.color: #dedede
+osd.label.text.color: #555555
+
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #157DEC
+
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #888888
+
+osd.button.unpressed.bg: flat border
+osd.button.unpressed.bg.color: #dedede
+osd.button.unpressed.*.border.color: #6e6e6e
+
+osd.button.pressed.bg: flat border
+osd.button.pressed.bg.color: #157DEC
+osd.button.pressed.*.border.color: #157DEC
+
+osd.button.focused.bg: flat solid border
+osd.button.focused.bg.color: #dedede
+osd.button.focused.*.border.color: #157DEC
+
+osd.button.focused.box.color: #157DEC
+
+
+# Fonts
+window.active.label.text.font:shadow=n
+window.inactive.label.text.font:shadow=n
+menu.items.font:shadow=n
+menu.title.text.font:shadow=n
+
+
+# Everything else
+border.width: 1
+padding.width: 13
+padding.height: 3
+window.handle.width: 0
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.label.text.justify: center
