@@ -4,7 +4,7 @@
 
 
 # Menu
-menu.border.color: #6e6e6e
+menu.border.color: #4c4c4c
 
 menu.title.bg: flat solid
 menu.title.bg.color: #2d2d2d
@@ -20,7 +20,7 @@ menu.items.active.bg: flat solid
 menu.items.active.bg.color: #157DEC
 menu.items.active.text.color: #f9f9f9
 
-menu.separator.color: #6e6e6e
+menu.separator.color: #4c4c4c
 menu.separator.width: 1
 menu.separator.padding.width: 2
 menu.separator.padding.height: 4
@@ -65,7 +65,7 @@ window.active.button.toggled.hover.image.color: #d76161
 
 
 # Inactive window
-window.inactive.border.color: #6e6e6e
+window.inactive.border.color: #4c4c4c
 
 window.inactive.title.bg: flat solid
 window.inactive.title.bg.color: #2d2d2d
@@ -120,7 +120,7 @@ osd.unhilight.bg.color: #888888
 
 osd.button.unpressed.bg: flat border
 osd.button.unpressed.bg.color: #2d2d2d
-osd.button.unpressed.*.border.color: #6e6e6e
+osd.button.unpressed.*.border.color: #4c4c4c
 
 osd.button.pressed.bg: flat border
 osd.button.pressed.bg.color: #157DEC
