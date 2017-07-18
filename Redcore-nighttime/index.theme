@@ -1,10 +1,10 @@
 [X-GNOME-Metatheme]
-Name=Kogaion-nighttime
+Name=Redcore-nighttime
 Type=X-GNOME-Metatheme
-Comment=Kogaion Linux nighttime theme
+Comment=Redcore Linux nighttime theme
 Encoding=UTF-8
-GtkTheme=Kogaion-nighttime
-MetacityTheme=Kogaion-nighttime
+GtkTheme=Redcore-nighttime
+MetacityTheme=Redcore-nighttime
 IconTheme=Numix-Circle
 CursorTheme=Default
 CursorSize=24

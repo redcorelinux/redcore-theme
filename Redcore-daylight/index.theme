@@ -1,10 +1,10 @@
 [X-GNOME-Metatheme]
-Name=Kogaion-daylight
+Name=Redcore-daylight
 Type=X-GNOME-Metatheme
-Comment=Kogaion Linux daylight theme
+Comment=Redcore Linux daylight theme
 Encoding=UTF-8
-GtkTheme=Kogaion-daylight
-MetacityTheme=Kogaion-daylight
+GtkTheme=Redcore-daylight
+MetacityTheme=Redcore-daylight
 IconTheme=Numix-Circle
 CursorTheme=Default
 CursorSize=24
