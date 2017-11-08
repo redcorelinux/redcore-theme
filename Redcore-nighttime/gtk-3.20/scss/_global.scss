@@ -11,7 +11,7 @@ $button_bg_color: if($variant == "dark", #dedede, #2d2d2d);
 $button_fg_color: if($variant == "dark", #2d2d2d, #dedede);
 $header_button_bg_color: #2d2d2d;
 $header_button_fg_color: #dedede;
-$selected_bg_color: #990000;
+$selected_bg_color: #520A0A;
 $selected_fg_color: #dedede;
 $tooltip_bg_color: #2d2d2d;
 $tooltip_fg_color: #dedede;
@@ -102,7 +102,7 @@ $lightdm_bg_color: $dark_bg_color;
 $lightdm_fg_color: $dark_fg_color;
 
 $wm_bg: $titlebar_bg_color;
-$wm_border_focused: #990000;
+$wm_border_focused: #520A0A;
 $wm_border_unfocused: #2d2d2d;
 $wm_title_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
 $wm_title_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
