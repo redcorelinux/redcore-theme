@@ -3,30 +3,30 @@
 @import "functions";
 
 // default color scheme
-$bg_color: if($variant == "dark", #dedede, #2d2d2d);
-$fg_color: if($variant == "dark", #2d2d2d, #dedede);
-$base_color: if($variant == "dark", #dedede, #2d2d2d);
-$text_color: if($variant == "dark", #2d2d2d, #dedede);
-$button_bg_color: if($variant == "dark", #dedede, #2d2d2d);
-$button_fg_color: if($variant == "dark", #2d2d2d, #dedede);
-$header_button_bg_color: #2d2d2d;
-$header_button_fg_color: #dedede;
+$bg_color: if($variant == "dark", #eff0f1, #31363b);
+$fg_color: if($variant == "dark", #31363b, #eff0f1);
+$base_color: if($variant == "dark", #eff0f1, #31363b);
+$text_color: if($variant == "dark", #31363b, #eff0f1);
+$button_bg_color: if($variant == "dark", #eff0f1, #31363b);
+$button_fg_color: if($variant == "dark", #31363b, #eff0f1);
+$header_button_bg_color: #31363b;
+$header_button_fg_color: #eff0f1;
 $selected_bg_color: #520A0A;
-$selected_fg_color: #dedede;
-$tooltip_bg_color: #2d2d2d;
-$tooltip_fg_color: #dedede;
+$selected_fg_color: #eff0f1;
+$tooltip_bg_color: #31363b;
+$tooltip_fg_color: #eff0f1;
 
 // dark colors
-$dark_bg_color: #2d2d2d;
-$dark_fg_color: #dedede;
+$dark_bg_color: #31363b;
+$dark_fg_color: #eff0f1;
 
 // shadows
 $dark_shadow: #000;
 $light_shadow: #fff;
 
 // caret
-$primary_caret_color: #dedede;
-$secondary_caret_color: #dedede;
+$primary_caret_color: #eff0f1;
+$secondary_caret_color: #eff0f1;
 $caret_aspect_ratio: 0.04;
 
 // white and black
@@ -71,7 +71,7 @@ $lightdm_fg_color: $dark_fg_color;
 
 $wm_bg: $titlebar_bg_color;
 $wm_border_focused: #520A0A;
-$wm_border_unfocused: #2d2d2d;
+$wm_border_unfocused: #31363b;
 $wm_title_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
 $wm_title_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
 $wm_icons_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
